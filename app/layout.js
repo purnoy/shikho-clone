@@ -6,6 +6,7 @@ import NavitemProvider from '@/context/NavigationContext';
 import MobileNavigation from '@/components/MobileNavigation';
 
 
+
 const noto = Noto_Sans_Bengali(
   {  
     subsets: ['latin'],
