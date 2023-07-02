@@ -1,41 +1,15 @@
 "use client";
-import { menu } from "@/utilities/utilities";
-import {FaBars} from "react-icons/fa";
+
+import {HiMenu} from "react-icons/hi";
 import Link from "next/link";
-import {usePathname} from 'next/navigation';
-import { useState } from "react";
+import { useContext } from "react";
+import { NavitemContext } from "@/context/NavigationContext";
+
 
 const Navbar = () => {
-    const pathName = usePathname();
-    const [newMenu, setNewMenu] = useState(menu);
-console.log(newMenu);
-    const management = (id) =>{
-        let menuNew = [];
-        menu.find((elm,a)=>{
-            if(elm.id===id){
-                menu[a] = {...elm, status:true};
-            }
-            else{
-                menu[a] = {...elm, status: false};
-            }
-            menuNew.push(menu[a]);
-        });
-        setNewMenu(menuNew);
-    }
-    window.onload = () =>{
-        let menuNew = [];
-        menu.find((elm,a)=>{
-            if(pathName ===elm.link){
-                menu[a] = {...elm, status:true}
-            }
-            else{
-                menu[a] = {...elm, status:false}
-            }
-            menuNew.push(menu[a]);
-            
-        })
-        setNewMenu(menuNew);
-    }
+    const {newMenu, management, setIsSideBar} = useContext(NavitemContext);
+
+    
   return (
     <nav className="">
         {/* Desktop Navigation */}
@@ -55,9 +29,10 @@ console.log(newMenu);
                 লগিন/ সাইন আপ
             </button>
         </div>
-        <div className="md:hidden flex">
-            <FaBars/>
+        <div className="md:hidden flex" onClick={()=>setIsSideBar(sidebar=>!sidebar)}>
+            <HiMenu className="text-[#444] text-[30px] cursor-pointer"/>
         </div>
+        
     </nav>
   )
 }

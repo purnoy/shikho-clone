@@ -7,12 +7,15 @@ module.exports = {
   ],
   theme: {
     extend: {
-      
+      backgroundImage: {
+        hero: 'url("https://res.cloudinary.com/cross-border-education-technologies-pte-ltd/image/upload/q_auto/f_auto/c_scale,w_auto/v1671372706/h6wu8vg26spl9tqfyk82")',
+      },
     },
     screens: {
-      sm: '640px',
-      md: '880px',
-      lg: '1124px',
+      xsm:'540',
+      sm: '700px',
+      md: '1000px',
+      lg: '1200px',
       xl: '1440px',
     },
   },

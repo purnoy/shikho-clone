@@ -2,6 +2,9 @@ import './globals.css'
 import { Noto_Sans_Bengali } from 'next/font/google';
 import Header from './../components/Header';
 import Footer from './../components/Footer';
+import NavitemProvider from '@/context/NavigationContext';
+import MobileNavigation from '@/components/MobileNavigation';
+
 
 const noto = Noto_Sans_Bengali(
   {  
@@ -19,10 +22,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={noto.className}>
-        <Header/>
-          {children}
-        <Footer/>
+      <body className={`${noto.className} relative `}>
+        <NavitemProvider>
+          <MobileNavigation/>
+          <Header/>
+            {children}
+          <Footer/>          
+        </NavitemProvider>
+       
       </body>
     </html>
   )

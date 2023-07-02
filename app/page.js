@@ -1,10 +1,14 @@
 import React from 'react'
+import HeroSection from './../components/HeroSection';
 
 const HomePage = () => {
   return (
-    <div>
-      Home Page
-    </div>
+    <section className="bg-hero h-[92vh]">
+      <div className="container mx-auto py-[100px]">
+        <HeroSection/>
+      </div>
+    </section>
+  
   )
 }
 
