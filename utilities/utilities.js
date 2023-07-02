@@ -32,7 +32,7 @@ export const menu = [
     {
         id: 6,
         name: 'বহুব্রীহি',
-        link: '/',
+        link: 'https://www.bohubrihi.com',
         status: false
     }
 ] 
