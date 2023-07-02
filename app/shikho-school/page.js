@@ -2,9 +2,11 @@ import React from 'react'
 
 const SchikhoSchool = () => {
   return (
-    <div>
-      
-    </div>
+    <section className="">
+      <div className="container mx-auto pt-[100px]  h-[100%]">
+        Shikho School
+      </div>
+    </section>
   )
 }
 

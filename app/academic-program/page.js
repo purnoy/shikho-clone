@@ -2,9 +2,11 @@ import React from 'react'
 
 const AcademicProgram = () => {
   return (
-    <div>
-      Academic Program
-    </div>
+    <section className="">
+      <div className="container mx-auto pt-[100px]  h-[100%]">
+        Academic Program
+      </div>
+    </section>
   )
 }
 

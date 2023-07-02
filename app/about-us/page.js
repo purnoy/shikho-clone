@@ -2,9 +2,11 @@ import React from 'react'
 
 const AboutUs = () => {
   return (
-    <div>
-      About Us
-    </div>
+    <section className="">
+      <div className="container mx-auto pt-[100px]  h-[100%]">
+        Course
+      </div>
+    </section>
   )
 }
 
