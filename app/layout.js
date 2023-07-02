@@ -22,7 +22,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${noto.className} relative `}>
+      <body className={`${noto.className} relative h-[2000px]`}>
         <NavitemProvider>
           <MobileNavigation/>
           <Header/>
