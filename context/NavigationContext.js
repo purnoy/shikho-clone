@@ -11,7 +11,6 @@ const NavitemProvider = ({children}) => {
     const [newMenu, setNewMenu] = useState(menu);
     const [isSideBar, setIsSideBar] = useState(false);
 
-console.log(isSideBar);
     const management = (id) =>{
         let menuNew = [];
         menu.find((elm,a)=>{
