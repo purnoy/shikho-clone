@@ -15,12 +15,12 @@ const HeroSection = () => {
               <h1 className="text-white  text-[2.2rem] mb-4 md:text-left text-center tracking-tight">Shikho একাডেমিক প্রোগ্রাম <br />SSC-HSC’র A+ প্রস্তুতি এখানেই</h1>
               <h2 className='md:text-left text-center text-[#ededed] md:text-[22px] mb-4 tracking-tight'>নবম থেকে দ্বাদশ শ্রেণি পর্যন্ত শিক্ষার্থীদের সারাবছর
                 <br />পড়ালেখার কমপ্লিট সল্যুশন</h2>
-              <div className="flex justify-center md:justify-start">
-                  <button type='button' className=' text-[14px] flex items-center  justify-center py-4 shadow-lg hover:shadow-sm transition duration-200 w-[180px] md:w-[200px]  rounded-lg bg-white mr-4 text-[#cf278d] hover:text-[#5468ff]'>
+              <div className="flex flex-col md:flex-row justify-center md:justify-start">
+                  <button type='button' className=' text-[14px] flex items-center  justify-center py-4 shadow-lg hover:shadow-sm transition duration-200 w-[100%] md:w-[200px]  rounded-lg bg-white mr-4 text-[#cf278d] hover:text-[#5468ff] mb-4 md:mb-0'>
                     <FaArtstation className='rotate-90 mr-2 text-[20px] '/>
                     শিখতে শুরু করো
                   </button>
-                  <button type='button' className=' text-[14px]  text-white hover:bg-[#5468ff] flex items-center justify-center py-4 shadow-lg hover:shadow-sm transition duration-200 w-[180px] md:w-[200px] rounded-lg bg-[#cf278d]'>একাডেমিক প্রোগ্রাম দেখো</button>
+                  <button type='button' className=' text-[14px]  text-white hover:bg-[#5468ff] flex items-center justify-center py-4 shadow-lg hover:shadow-sm transition duration-200 w-[100%] md:w-[200px] rounded-lg bg-[#cf278d]'>একাডেমিক প্রোগ্রাম দেখো</button>
                 </div>
             </div>
             <div className="flex justify-end h-[100%]">
