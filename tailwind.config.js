@@ -12,12 +12,11 @@ module.exports = {
       },
     },
     screens: {
-      xsm:'500',
-      sm: '700px',
-      md: '900px',
-      lg: '1100px',
-      xl: '1300px',
-      dxl: '1500px'
+      xsm:'540',
+      sm: '750px',
+      md: '1000px',
+      lg: '1260px',
+      xl: '1400x',
     },
   },
   plugins: [],

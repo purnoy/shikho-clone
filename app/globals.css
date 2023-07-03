@@ -17,3 +17,6 @@
   .flex-between {
     @apply flex justify-between items-center;
   }
+  .section-intro{
+    @apply py-8 px-4
+  }

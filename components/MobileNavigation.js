@@ -10,7 +10,7 @@ import Link from "next/link";
 const MobileNavigation = () => {
     const {isSideBar, setIsSideBar, newMenu, management } = useContext(NavitemContext);
   return (
-    <nav className={`${isSideBar? 'right-0' : '-right-[100%]'} fixed top-0 w-[100%]   bottom-0 bg-[#354895] z-30  max-h-screen flex md:hidden transition-all duration-1000`}>
+    <nav className={`${isSideBar? 'right-0' : '-right-[100%]'} fixed top-0 w-[100%]   bottom-0 bg-[#354895] z-50  max-h-screen flex md:hidden transition-all duration-1000`}>
         <div className=" w-[100%] p-12  ">
             <div className="flex justify-end mb-4">
                 <GoArrowRight onClick={()=>setIsSideBar(false)} className='text-white text-[35px] cursor-pointer'/>
