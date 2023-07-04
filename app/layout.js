@@ -4,6 +4,7 @@ import Header from './../components/Header';
 import Footer from './../components/Footer';
 import NavitemProvider from '@/context/NavigationContext';
 import MobileNavigation from '@/components/MobileNavigation';
+import HomePageAcamedicOverviewProvider from '@/context/HomePageAcamedicOverviewContext';
 
 
 
@@ -25,10 +26,12 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${noto.className} relative h-[2000px]`}>
         <NavitemProvider>
-          <MobileNavigation/>
+        <HomePageAcamedicOverviewProvider>
+        <MobileNavigation/>
           <Header/>
             {children}
-          <Footer/>          
+          <Footer/>  
+        </HomePageAcamedicOverviewProvider>        
         </NavitemProvider>
        
       </body>

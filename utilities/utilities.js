@@ -100,7 +100,7 @@ export const acamedicOverview = [
         status: false
     },
     {
-        id: 6,
+        id: 7,
         logo: report_card,
         image: report_card_image,
         title: 'রিপোর্ট কার্ড',

@@ -1,7 +1,14 @@
+'use client'
 import Image from "next/image";
 import { acamedicOverview } from "@/utilities/utilities";
+import { useContext } from "react";
+import  {HomePageAcamedicOverviewContext}  from "@/context/HomePageAcamedicOverviewContext";
+
 
 const HomePageAcamedicOverview  = () => {
+
+    const {academicList, highlightedCourse} = useContext(HomePageAcamedicOverviewContext);
+
   return (
     <section className="bg-academicOverview bg-no-repeat bg-cover">
         <div className="section-intro container mx-auto">
@@ -35,14 +42,17 @@ const HomePageAcamedicOverview  = () => {
                     {
                         <div className=" w-[37%] flex flex-col space-y-4">
                         {
-                            acamedicOverview.map((elm)=>{
+                            academicList.map((elm)=>{
                                 return(
-                                    <div className="flex items-center bg-white px-12 py-6 hover:-translate-y-1 transition duration-300 rounded-xl cursor-pointer">
-                                        <div className="mr-4">
-                                            <Image src={elm.logo} width={40} height={40} alt="Acamdeic Logo"></Image>
-                                        </div>
-                                        <div className="text-[20px] text-[#354895]">
-                                            {elm.title}
+                                    <div className="hover:-translate-y-0.5 transition duration-300 relative z-20 " key={elm.id} onClick={()=>highlightedCourse(elm.id)}>
+                                        <div  className={`${elm.status===true? ' border-[#c84bae] border-4 ' : ''} bg-white flex items-center  py-4 px-12  rounded-xl cursor-pointer`}>
+                                            <div className="mr-4">
+                                                <Image src={elm.logo} width={44} height={40} alt="Acamdeic Logo"></Image>
+                                            </div>
+                                            <div className={`${elm.status===true? 'absolute top-[50%] -translate-y-1/2 border-r-4 border-t-4 border-[#c84bae] -right-[17px]  bg-white h-[36px] w-[36px] rounded-tr-md rotate-45 ' : 'hidden'}`}></div>
+                                            <div className="text-[20px]">
+                                                {elm.title}
+                                            </div>
                                         </div>
                                     </div>
                                 )
@@ -51,7 +61,7 @@ const HomePageAcamedicOverview  = () => {
                         </div>
                     }
                     <div className="bg-green-500 w-[63%]">
-                        5
+                        
                     </div>
                 </div>
             </div>

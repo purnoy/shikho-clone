@@ -8,7 +8,7 @@ export const NavitemContext = createContext();
 
 const NavitemProvider = ({children}) => {
     const pathName = usePathname();
-    const [newMenu, setNewMenu] = useState(menu);
+    const [newMenu, setNewMenu] = useState([]);
     const [isSideBar, setIsSideBar] = useState(false);
 
     const management = (id) =>{

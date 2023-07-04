@@ -11,7 +11,8 @@ const HomePage = () => {
       <HeroSection/>
       <ImageModal/>
       <HomePageCourseIntro/>
-      <HomePageAcamedicOverview/>
+        <HomePageAcamedicOverview/>
+      
     </div>
   
   )
