@@ -8,6 +8,7 @@ const HomePageLessonCarousel = () => {
                 <h1 className='text-center text-[#354895] text-[27px] font-semibold mb-2'>দারুণ সব অ্যানিমেটেড উদাহরণের ভিডিও লেসনে শেখা হবে আরও সহজ</h1>
                 <h3 className='text-center text-[#293563] text-[16px] '>সেরা মেন্টরদের তৈরি চমৎকার সব অ্যানিমেটেড উদাহরণ দিয়ে সাজানো ভিডিও লেসন দেখে সহজেই শিখে ক্লাসে-পরীক্ষায় এগিয়ে যাও</h3>
             </div>
+            ...
         </div>
     </section>
   )
