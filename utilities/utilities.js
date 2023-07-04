@@ -62,7 +62,7 @@ export const acamedicOverview = [
         logo: live_class,
         image: live_class_image,
         title: 'লাইভ এবং রেকর্ডেড ক্লাস',
-        status: false
+        status: true
     },
     {
         id: 2,

@@ -9,7 +9,6 @@ const HomePageAcamedicOverviewProvider = ({children}) => {
 
 
     const [academicList, setAcademicList] = useState(acamedicOverview);
-    console.log(academicList)
 
 
     const highlightedCourse = (id)=>{
@@ -27,9 +26,6 @@ const HomePageAcamedicOverviewProvider = ({children}) => {
         
         setAcademicList(listAcademic);
     }
-
-
-
 
   
 

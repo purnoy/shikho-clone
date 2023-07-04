@@ -11,7 +11,7 @@ const Navbar = () => {
 
     
   return (
-    <nav className="">
+    <nav className="" >
         {/* Desktop Navigation */}
         <div className="md:flex hidden items-center space-x-7 ">
             <ul className="flex space-x-5 text-[#454c7e] text-[15px]">

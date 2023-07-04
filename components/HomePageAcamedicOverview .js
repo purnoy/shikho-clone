@@ -9,6 +9,8 @@ const HomePageAcamedicOverview  = () => {
 
     const {academicList, highlightedCourse} = useContext(HomePageAcamedicOverviewContext);
 
+   
+
   return (
     <section className="bg-academicOverview bg-no-repeat bg-cover">
         <div className="section-intro container mx-auto">
@@ -20,8 +22,8 @@ const HomePageAcamedicOverview  = () => {
                 {
                     acamedicOverview.map((elm)=>{
                         return(
-                            <>
-                                <div className="flex-center mb-4" key={elm.id}>
+                            <div key={elm.id}>
+                                <div className="flex-center mb-4" >
                                     <span className="mr-4">
                                         <Image src={elm.logo} width={40} height={40} alt="Section Header Logo" ></Image>
                                     </span>
@@ -32,7 +34,7 @@ const HomePageAcamedicOverview  = () => {
                                         <Image src={elm.image} width={600} height={450} alt="Course Overview Image" className="object-cover rounded-xl"></Image>
                                     }
                                 </div>
-                            </>
+                            </div>
                         )
                     })
                 }
@@ -45,12 +47,12 @@ const HomePageAcamedicOverview  = () => {
                             academicList.map((elm)=>{
                                 return(
                                     <div className="hover:-translate-y-0.5 transition duration-300 relative z-20 " key={elm.id} onClick={()=>highlightedCourse(elm.id)}>
-                                        <div  className={`${elm.status===true? ' border-[#c84bae] border-4 ' : ''} bg-white flex items-center  py-4 px-12  rounded-xl cursor-pointer`}>
+                                        <div  className={`${elm.status===true? ' border-[#c84bae] border-4 ' : ''} bg-white flex items-cente py-3 px-4 md:px-12  rounded-xl cursor-pointer`}>
                                             <div className="mr-4">
                                                 <Image src={elm.logo} width={44} height={40} alt="Acamdeic Logo"></Image>
                                             </div>
                                             <div className={`${elm.status===true? 'absolute top-[50%] -translate-y-1/2 border-r-4 border-t-4 border-[#c84bae] -right-[17px]  bg-white h-[36px] w-[36px] rounded-tr-md rotate-45 ' : 'hidden'}`}></div>
-                                            <div className="text-[20px]">
+                                            <div className="text-[16px] md:text-[16px] flex-center">
                                                 {elm.title}
                                             </div>
                                         </div>
@@ -60,8 +62,19 @@ const HomePageAcamedicOverview  = () => {
                         }
                         </div>
                     }
-                    <div className="bg-green-500 w-[63%]">
-                        
+                    <div className="w-[63%]  flex  justify-center ">
+                        {
+                            academicList.map((elm)=>{
+                                return(
+                                    <div className=" rounded-xl overflow-hidden h=[100%]" key={elm.id}>
+                                        {
+                                            elm.status? <Image src={elm.image} width={900} height={900} alt="Image" className="object-fit"></Image> : <span></span>
+                                        }
+                                    </div>
+                                )
+
+                            })
+                        }
                     </div>
                 </div>
             </div>

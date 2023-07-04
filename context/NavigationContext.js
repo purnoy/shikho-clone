@@ -8,7 +8,7 @@ export const NavitemContext = createContext();
 
 const NavitemProvider = ({children}) => {
     const pathName = usePathname();
-    const [newMenu, setNewMenu] = useState([]);
+    const [newMenu, setNewMenu] = useState(menu);
     const [isSideBar, setIsSideBar] = useState(false);
 
     const management = (id) =>{
@@ -26,27 +26,45 @@ const NavitemProvider = ({children}) => {
         });
         setNewMenu(menuNew);
     }
-    useEffect(()=>{
-        
-        let menuNew = [];
-        menu.find((elm,a)=>{
-            if(pathName ===elm.link){
-                menu[a] = {...elm, status:true}
-                menuNew.push(menu[a]);
-            }
-            else{
-                menu[a] = {...elm, status:false}
-                menuNew.push(menu[a]);
-            }  
-        })
-        setNewMenu(menuNew);
 
-    }, [window.onload])
+    // useEffect(()=>{
+        
+    //     let menuNew = [];
+    //     menu.find((elm,a)=>{
+    //         if(pathName ===elm.link){
+    //             menu[a] = {...elm, status:true}
+    //             menuNew.push(menu[a]);
+    //         }
+    //         else{
+    //             menu[a] = {...elm, status:false}
+    //             menuNew.push(menu[a]);
+    //         }  
+    //     })
+    //     setNewMenu(menuNew);
+
+    // }, [window.onload])
+
+ 
+        // const onLoadManagement = () =>{
+        //     let menuNew = [];
+        //     menu.find((elm,a)=>{
+        //         if(pathName ===elm.link){
+        //             menu[a] = {...elm, status:true}
+        //             menuNew.push(menu[a]);
+        //         }
+        //         else{
+        //             menu[a] = {...elm, status:false}
+        //             menuNew.push(menu[a]);
+        //         }  
+        //     })
+        //     setNewMenu(menuNew);
+        // }
+ 
 
   
 
   return (
-    <NavitemContext.Provider value={{newMenu, management, setIsSideBar, isSideBar  }}>
+    <NavitemContext.Provider value={{newMenu, management, setIsSideBar, isSideBar}}>
       {children}
     </NavitemContext.Provider>
   )
