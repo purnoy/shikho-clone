@@ -107,3 +107,83 @@ export const acamedicOverview = [
         status: false
     },
 ]
+
+
+
+import ssc_physics from '@/asset/lesson_carousel/ssc_physics.webp'
+import ssc_math_2 from '@/asset/lesson_carousel/ssc_math_2.webp'
+import ssc_math_1 from '@/asset/lesson_carousel/ssc_math_1.jpg'
+import ssc_chemistry from '@/asset/lesson_carousel/ssc_chemistry.jpg'
+import hsc_it from '@/asset/lesson_carousel/hsc_it.webp'
+import hsc_higher_math_2 from '@/asset/lesson_carousel/hsc_higher_math_2.webp'
+import hsc_higher_math_1 from '@/asset/lesson_carousel/hsc_higher_math_1.webp'
+import hsc_biology from '@/asset/lesson_carousel/hsc_biology.webp'
+
+
+export const lessonCarousel = [
+    {
+        id: 1,
+        name: ssc_physics,
+        link: 'https://www.youtube.com/watch?v=nDwlp4Ga04s',
+        category: 'এসএসসি',
+        for: 'SSC পদার্থবিজ্ঞান',
+        topic: '8.1 - আলোর প্রকৃতি'
+    },
+    {
+        id: 2,
+        name: ssc_math_2,
+        link: 'https://www.youtube.com/watch?v=VbarIESVE9E',
+        category: 'এসএসসি',
+        for: 'SSC গণিত',
+        topic: '1.1 - সংখ্যার শ্রেণিবিন্যাস'
+    },
+    {
+        id: 3,
+        name: ssc_math_1,
+        link: 'https://www.youtube.com/watch?v=MQmrrCakKeQ',
+        category: 'এসএসসি',
+        for: 'SSC গণিত',
+        topic: '16.1 - পরিসীমা ক্ষেত্রফল ও ত্রিভুজের ক্ষেত্রফল'
+    },
+    {
+        id: 4,
+        name: ssc_chemistry,
+        link: 'https://www.youtube.com/watch?v=2-WJ5F7fTbk',
+        category: 'এসএসসি',
+        for: 'SSC রসায়ন',
+        topic: '1.1 - জীবাশ্ম জ্বালানী'
+    },
+    {
+        id: 5,
+        name: hsc_it,
+        link: 'https://www.youtube.com/watch?v=H4NlIyBk4qI',
+        category: 'এইচএসসি',
+        for: 'HSC তথ্য ও যোগাযোগ প্রযুক্তি',
+        topic: '2.13 - নেটওয়ার্ক টপোলজি পর্ব ২'
+    },
+    {
+        id: 6,
+        name: hsc_higher_math_2,
+        link: 'https://www.youtube.com/watch?v=1RftL5YgleM',
+        category: 'এইচএসসি',
+        for: 'HSC উচ্চতর গণিত ২য় পত্র',
+        topic: '2.1 - যোগাশ্রয়ী প্রোগ্রামিংয়ের ধারণা'
+    },
+    {
+        id: 7,
+        name: hsc_higher_math_1,
+        link: 'https://www.youtube.com/watch?v=DsS6i9bgZp0',
+        category: 'এইচএসসি',
+        for: 'HSC উচ্চতর গণিত ১ম পত্র',
+        topic: '2.1 - ভেক্টরের পরিচয় ও প্রকারভেদ'
+    },
+    {
+        id: 8,
+        name: hsc_biology,
+        link: 'https://www.youtube.com/watch?v=xDAfIFZBUA0',
+        category: 'এইচএসসি',
+        for: 'HSC জীববিজ্ঞান ২য় পত্র',
+        topic: '2.8 - ঘাস ফড়িংয়ের মুখোপাঙ্গ, বক্ষ, উদর'
+    }
+]
+
