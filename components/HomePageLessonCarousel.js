@@ -21,7 +21,7 @@ const {newCatNavObj, selectedCat} = useContext(HomePageLessonCarouselContext);
                 {
                   newCatNavObj.map(item=>{
                     return(
-                      <div key={item.category} onClick={()=>selectedCat(item)}  className={`${item.status? 'after:w-[100%] ' : 'after:w-[0]'}  relative after:absolute after:bottom-0 after:h-[3px] after:left-0 after:bg-[#cf278d] after:z-20  px-1 cursor-pointer after:transition-all after:duration-500  py-4 0`}>
+                      <div key={item.category} onClick={()=>selectedCat(item)}  className={`${item.status? 'after:w-[100%] ' : 'after:w-[0]'}  relative after:absolute after:bottom-0 after:h-[3px] after:left-0 after:rounded-xl after:bg-[#cf278d] after:z-20  px-1 cursor-pointer after:transition-all after:duration-500  py-4 0`}>
                         <p className='text-[#354895]'>{item.category}</p>
                       </div>
                     )

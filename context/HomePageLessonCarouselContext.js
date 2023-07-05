@@ -1,5 +1,5 @@
 'use client'
-import { createContext, useState } from "react";
+import { createContext, useEffect, useState } from "react";
 import { lessonCarousel } from "@/utilities/utilities";
 
 export const HomePageLessonCarouselContext = createContext();
@@ -9,7 +9,9 @@ export const HomePageLessonCarouselContext = createContext();
 
 const HomePageLessonCarouselProvider = ({children}) => {
 
-    const {carouselData, setCarouselData} = useState(lessonCarousel);
+
+    const {carouselData, setCarouselData} = useState(lessonCarousel );
+
     const catNav = [...new Set(lessonCarousel.map(item=>{
         return item.category;
       }))];
@@ -22,6 +24,7 @@ const HomePageLessonCarouselProvider = ({children}) => {
       catNavObj.unshift({category:'সকল কোর্স', status:true});
 
       const [newCatNavObj, setNewCatNavObj] = useState(catNavObj);
+      
       const selectedCat = (item) =>{
         const catn = [];
         catNavObj.find(prop=>{
@@ -33,6 +36,8 @@ const HomePageLessonCarouselProvider = ({children}) => {
             } 
         })
         setNewCatNavObj(catn);
+
+        
         }
 
         const filteredData = ()=>{
@@ -43,13 +48,15 @@ const HomePageLessonCarouselProvider = ({children}) => {
                     newDataList = lessonCarousel.filter(prop=> item.category!==prop.category);
                 }
                 else if(trueData.category === 'সকল কোর্স'){
-                    console.log(lessonCarousel)
+                    newDataList = lessonCarousel.map(prop=>prop)
                 }
 
             })
             console.log(newDataList);
         }
         filteredData();
+
+        
   return (
     <HomePageLessonCarouselContext.Provider value={{newCatNavObj, selectedCat}}>
       {children}
