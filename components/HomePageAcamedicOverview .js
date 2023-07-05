@@ -9,7 +9,7 @@ const HomePageAcamedicOverview  = () => {
 
     const {academicList, highlightedCourse} = useContext(HomePageAcamedicOverviewContext);
 
-   
+ 
 
   return (
     <section className="bg-academicOverview bg-no-repeat bg-cover">
@@ -32,6 +32,7 @@ const HomePageAcamedicOverview  = () => {
                                 <div className="mb-8" >
                                     {
                                         <Image src={elm.image} width={600} height={450} alt="Course Overview Image" className="object-cover rounded-xl"></Image>
+                                        
                                     }
                                 </div>
                             </div>
