@@ -5,7 +5,9 @@ import Footer from './../components/Footer';
 import NavitemProvider from '@/context/NavigationContext';
 import MobileNavigation from '@/components/MobileNavigation';
 import HomePageAcamedicOverviewProvider from '@/context/HomePageAcamedicOverviewContext';
-import HomePageLessonCarouselProvider from '@/context/HomePageLessonCarouselContext'
+import HomePageLessonCarouselProvider from '@/context/HomePageLessonCarouselContext';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";;
 
 
 

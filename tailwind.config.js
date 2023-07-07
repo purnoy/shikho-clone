@@ -1,3 +1,4 @@
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -9,7 +10,8 @@ module.exports = {
     extend: {
       backgroundImage: {
         hero: 'url("https://res.cloudinary.com/cross-border-education-technologies-pte-ltd/image/upload/q_auto/f_auto/c_scale,w_auto/v1671372706/h6wu8vg26spl9tqfyk82")',
-        academicOverview: 'url("https://shikho.com/images/shikho-program/academic_program_bg.png")'
+        academicOverview: 'url("https://shikho.com/images/shikho-program/academic_program_bg.png")',
+        lesson_carousel: 'url("https://res.cloudinary.com/cross-border-education-technologies-pte-ltd/image/upload/v1670309928/mh6hpcqrlb4ts68ia1gg.jpg")'
       },
       
     },

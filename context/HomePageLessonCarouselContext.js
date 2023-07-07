@@ -4,28 +4,25 @@ import { lessonCarousel } from "@/utilities/utilities";
 
 export const HomePageLessonCarouselContext = createContext();
 
+const catNav = [...new Set(lessonCarousel.map(item=>{
+  return item.category;
+}))];
 
+const catNavObj = catNav.map(cat=>{
+  return {
+    category:cat, status:false
+  }
+})
+catNavObj.unshift({category:'সকল কোর্স', status:true});
 
 
 const HomePageLessonCarouselProvider = ({children}) => {
 
-
-    const {carouselData, setCarouselData} = useState(lessonCarousel );
-
-    const catNav = [...new Set(lessonCarousel.map(item=>{
-        return item.category;
-      }))];
-    
-      const catNavObj = catNav.map(cat=>{
-        return {
-          category:cat, status:false
-        }
-      })
-      catNavObj.unshift({category:'সকল কোর্স', status:true});
-
+      const [carouselData, setCarouselData] = useState(lessonCarousel);
       const [newCatNavObj, setNewCatNavObj] = useState(catNavObj);
-      
+      console.log(carouselData)
       const selectedCat = (item) =>{
+        setCarouselData(lessonCarousel)
         const catn = [];
         catNavObj.find(prop=>{
             if(item.category === prop.category){
@@ -36,13 +33,11 @@ const HomePageLessonCarouselProvider = ({children}) => {
             } 
         })
         setNewCatNavObj(catn);
-
-        
-        }
-
-        const filteredData = ()=>{
-            const trueData = newCatNavObj.find(td=> td.status===true)
+       
+      
+            const trueData = catn.find(td=> td.status===true);
             let newDataList = []
+            
             lessonCarousel.map(item=>{
                 if(trueData.category ===item.category){
                     newDataList = lessonCarousel.filter(prop=> item.category!==prop.category);
@@ -50,15 +45,18 @@ const HomePageLessonCarouselProvider = ({children}) => {
                 else if(trueData.category === 'সকল কোর্স'){
                     newDataList = lessonCarousel.map(prop=>prop)
                 }
-
+                
             })
-            console.log(newDataList);
-        }
-        filteredData();
+            setCarouselData(newDataList)
 
-        
+      
+        }
+
+          
+
+
   return (
-    <HomePageLessonCarouselContext.Provider value={{newCatNavObj, selectedCat}}>
+    <HomePageLessonCarouselContext.Provider value={{newCatNavObj, selectedCat, carouselData}}>
       {children}
     </HomePageLessonCarouselContext.Provider>
   )
