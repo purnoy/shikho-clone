@@ -20,12 +20,48 @@
   .section-intro{
     @apply py-8 px-4
   }
+
   
  .slick-slider{
   position: static!important;
  }
- .icon{
-  *{
-     color: red;
-   }
+ .slick-dots{
+  position: static!important;
+  margin-top: 30px;
+  display: flex!important;
+  justify-content: center;
+  
+ }
+
+.slick-dots li{
+  margin-right: 10px!important;
+}
+.slick-dots li button{
+  color: #cf278d!important;
+}
+
+.slick-dots li button::before{
+  font-family: 'slick';
+  font-size: 0px!important;
+  background-color: #999;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  border-radius:30px;
+  height: 10px!important;
+  content: '•';
+  text-align: center;
+  opacity: 1!important;
+  color: black;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition:  .5s;
+}
+.slick-dots li.slick-active button::before{
+  font-size: 0!important;
+  opacity:1!important;
+  width:30px!important;
+  border-radius: 30px;
+  background-color: #cf278d;
 }

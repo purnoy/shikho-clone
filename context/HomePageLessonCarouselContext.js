@@ -20,7 +20,7 @@ const HomePageLessonCarouselProvider = ({children}) => {
 
       const [carouselData, setCarouselData] = useState(lessonCarousel);
       const [newCatNavObj, setNewCatNavObj] = useState(catNavObj);
-      console.log(carouselData)
+
       const selectedCat = (item) =>{
         setCarouselData(lessonCarousel)
         const catn = [];

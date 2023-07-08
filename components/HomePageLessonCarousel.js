@@ -11,24 +11,27 @@ import { SampleNextArrow, SamplePrevArrow } from './CarouselArrows';
 const HomePageLessonCarousel = () => {
 
     var settings = {
-      dots: false,
+
       infinite: true,
       slidesToShow: 4,
       slidesToScroll: 1,
       autoplay: true,
-      autoplaySpeed: 2500,
+      autoplaySpeed: 250000,
       pauseOnHover: true,
       swipeToSlide: true,
-      nextArrow: <SampleNextArrow/>,
+      nextArrow: <SampleNextArrow />,
       prevArrow: <SamplePrevArrow />,
+      
       responsive: [
         {
+          
           breakpoint: 800,
           settings: {
+            dots:true,
             slidesToShow: 2,
             slidesToScroll: 2,
             infinite: true,
-            dots: true
+            
           }
         }
        ]
@@ -59,14 +62,18 @@ const {newCatNavObj, selectedCat, carouselData} = useContext(HomePageLessonCarou
               </div>
             </div>
             <div className="bg-lesson_carousel px-6 py-12 rounded-2xl border-white border-2 relative">
-              <div className="max-w-[85%] mx-auto">
+          
+
+              <div className="max-w-[90%] mx-auto">
                   
-              <Slider {...settings} className={` `}>
+              <Slider {...settings} className={` grid grid-cols-1 justify-center mx-auto`}>
              
                 {
                 carouselData.map(item=>{
                   return(
-                    <HomePageLessonCarouselPrinting key={item.id} item={item}/> 
+                    <HomePageLessonCarouselPrinting key={item.id} item={item}>
+                      
+                    </HomePageLessonCarouselPrinting> 
                   )               
                     })
                   }

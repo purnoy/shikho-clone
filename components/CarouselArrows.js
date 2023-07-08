@@ -13,7 +13,7 @@ export const SampleNextArrow = (props) => {
     // />
     <div
       // className={`hidden md:block h-[50px] w-[50px] bg-white rounded-full cursor-pointer hover:bg-blue-500 shadow-lg absolute -translate-y-1/2 top-[50%] left-8 before:absolute before:w-[30px] before:h-[30px] before:bg-green-500 before:rounded-full before:top-[50%] before:left-[50%] before:-translate-y-1/2 before:-translate-x-1/2 before:flex-center before:content-['<']`}
-      className={`hidden md:block h-[50px] group w-[50px] bg-white rounded-full cursor-pointer hover:bg-blue-500 shadow-lg absolute -translate-y-1/2 top-[50%] right-8`}
+      className={`hidden sm:block h-[50px] group w-[50px] bg-white rounded-full cursor-pointer hover:bg-blue-500 shadow-lg absolute -translate-y-1/2 top-[50%] md:right-8 right-4`}
       onClick={onClick}
     >
 
@@ -25,12 +25,12 @@ export const SampleNextArrow = (props) => {
   );
 }
 
-export const SamplePrevArrow = (props) => {
-  const { className, style, onClick } = props;
+export const SamplePrevArrow = ({className, style, onClick }) => {
+ 
   return (
     <div
       // className={`hidden md:block h-[50px] w-[50px] bg-white rounded-full cursor-pointer hover:bg-blue-500 shadow-lg absolute -translate-y-1/2 top-[50%] left-8 before:absolute before:w-[30px] before:h-[30px] before:bg-green-500 before:rounded-full before:top-[50%] before:left-[50%] before:-translate-y-1/2 before:-translate-x-1/2 before:flex-center before:content-['<']`}
-      className={`hidden md:block h-[50px] group w-[50px] bg-white rounded-full cursor-pointer hover:bg-blue-500 shadow-lg absolute -translate-y-1/2 top-[50%] left-8`}
+      className={`hidden sm:block h-[50px]  w-[50px] bg-white rounded-full cursor-pointer hover:bg-blue-500 shadow-lg absolute -translate-y-1/2 top-[50%] left-4 md:left-8`}
       onClick={onClick}
     >
 

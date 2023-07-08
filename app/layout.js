@@ -7,7 +7,9 @@ import MobileNavigation from '@/components/MobileNavigation';
 import HomePageAcamedicOverviewProvider from '@/context/HomePageAcamedicOverviewContext';
 import HomePageLessonCarouselProvider from '@/context/HomePageLessonCarouselContext';
 import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";;
+import "slick-carousel/slick/slick-theme.css";
+import VideoModalProvider from '@/context/VideoModalContext';
+
 
 
 
@@ -31,11 +33,13 @@ export default function RootLayout({ children }) {
         <NavitemProvider>
         <HomePageAcamedicOverviewProvider>
           <HomePageLessonCarouselProvider>
-          <MobileNavigation/>
-            <Header/>
-              {children}
-            <Footer/>  
-            </HomePageLessonCarouselProvider>
+          <VideoModalProvider>
+            <MobileNavigation/>
+              <Header/>
+                {children}
+              <Footer/>  
+              </VideoModalProvider>
+          </HomePageLessonCarouselProvider>
         </HomePageAcamedicOverviewProvider>        
         </NavitemProvider>
        
