@@ -27,6 +27,7 @@ const HomePageLessonCarousel = () => {
           
           breakpoint: 800,
           settings: {
+            rows: 2,
             dots:true,
             slidesToShow: 2,
             slidesToScroll: 2,
@@ -61,7 +62,7 @@ const {newCatNavObj, selectedCat, carouselData} = useContext(HomePageLessonCarou
                   } 
               </div>
             </div>
-            <div className="bg-lesson_carousel px-6 py-12 rounded-2xl border-white border-2 relative">
+            <div className="bg-lesson_carousel px-6 py-6 rounded-2xl border-white border-2 relative">
           
 
               <div className="max-w-[90%] mx-auto">
