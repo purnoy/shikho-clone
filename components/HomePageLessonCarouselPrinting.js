@@ -15,7 +15,7 @@ const HomePageLessonCarouselPrinting = ({item}) => {
   return (
         <div className=" w-[100%] h-[250px] grid hover:-translate-y-4  duration-300  flex-center cursor-pointer" onClick={()=> recieveModalLink(item.link, item.topic)}>
           
-          <div className="w-[90%] h-[220px]  bg-white rounded-xl shadow-lg cursor pointer ">
+          <div className="w-[90%] h-[180px] md:h-[220px]  bg-white rounded-xl shadow-lg cursor pointer ">
             <div className="w-[100%] h-[60%] rounded-tl-lg rounded-tr-lg overflow-hidden relative ">
               <Image src={item.image} width="200" height="100" className="h-[100%] w-[100%] object-cover" alt="Cover pic"></Image>
               <div className="absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] z-20">
@@ -25,11 +25,11 @@ const HomePageLessonCarouselPrinting = ({item}) => {
               {item.category}
               </div>
             </div>
-            <div className="text-[#354895] text-[11px] font-semibold px-4 py-4 ">
+            <div className="text-[#354895] text-[11px] font-semibold px-4 py-2 md:py-4 ">
                 {item.for}
               </div>
               <div className="text-[#354895] text-[14px] font-bold px-4">
-                {item.topic.substring(0,28)}...
+                {item.topic.substring(0,22)}...
               </div>
           </div>      
         </div>
