@@ -27,9 +27,10 @@
  }
  .slick-dots{
   position: static!important;
-  margin-top: 30px;
+
   display: flex!important;
   justify-content: center;
+  @apply mt-[60px] md:mt-[30px];
   
  }
 
