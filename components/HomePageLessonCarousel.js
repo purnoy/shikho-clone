@@ -60,10 +60,10 @@ const {newCatNavObj, selectedCat, carouselData} = useContext(HomePageLessonCarou
                   } 
               </div>
             </div>
-            <div className="bg-lesson_carousel p-6 rounded-2xl border-white border-2 relative">
+            <div className="bg-lesson_carousel py-6 px-2 md:px-6 rounded-2xl border-white border-2 relative">
           
 
-              <div className="max-w-[85%] mx-auto">
+              <div className="max-w-[95%] md:max-w-[85%] mx-auto">
                   
               <Slider {...settings} className={`  `}>
              
