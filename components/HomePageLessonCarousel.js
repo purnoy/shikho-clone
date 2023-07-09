@@ -16,7 +16,7 @@ const HomePageLessonCarousel = () => {
       slidesToShow: 4,
       slidesToScroll: 1,
       autoplay: true,
-      autoplaySpeed: 250000,
+      autoplaySpeed: 2500,
       pauseOnHover: true,
       swipeToSlide: true,
       nextArrow: <SampleNextArrow />,
@@ -24,7 +24,6 @@ const HomePageLessonCarousel = () => {
       
       responsive: [
         {
-          
           breakpoint: 800,
           settings: {
             rows: 2,
@@ -32,7 +31,6 @@ const HomePageLessonCarousel = () => {
             slidesToShow: 2,
             slidesToScroll: 2,
             infinite: true,
-            
           }
         }
        ]
@@ -62,12 +60,12 @@ const {newCatNavObj, selectedCat, carouselData} = useContext(HomePageLessonCarou
                   } 
               </div>
             </div>
-            <div className="bg-lesson_carousel px-6 py-6 rounded-2xl border-white border-2 relative">
+            <div className="bg-lesson_carousel p-6 rounded-2xl border-white border-2 relative">
           
 
-              <div className="max-w-[90%] mx-auto">
+              <div className="max-w-[85%] mx-auto">
                   
-              <Slider {...settings} className={` grid grid-cols-1 justify-center mx-auto`}>
+              <Slider {...settings} className={`  `}>
              
                 {
                 carouselData.map(item=>{
