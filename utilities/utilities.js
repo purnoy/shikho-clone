@@ -187,3 +187,35 @@ export const lessonCarousel = [
     }
 ]
 
+import practice from '../asset/mobile_updates/pratice.webp';
+import solid_preparation from '@/asset/mobile_updates/solid_preparation.webp';
+import report_card_1 from '@/asset/mobile_updates/report_card.webp';
+export const mobile_updates = [
+    {
+        title: "প্র্যাকটিস",
+        image: practice,
+
+    },
+    {
+        title: "সলিড প্রিপারেশন",
+        image: solid_preparation,
+        
+    },
+    {
+        title: "সলিড প্রিপারেশন",
+        image: report_card_1,
+
+    },
+] 
+
+export const mobile_updates_text = [
+    {   
+        text:"প্রতিটি বিষয়ের সেরা মেন্টরের সাথে ৩ ধরনের লাইভ ক্লাসে প্রতিটি টপিক শিখো"
+    },
+    {   
+        text: "হোমওয়ার্ক হিসেবে বাস্তব উদাহরণের অ্যানিমেটেড ভিডিও দেখো, স্মার্ট নোট পড়ো এবং প্র্যাকটিস টেস্ট দাও"
+    },
+    {   
+        text:"ক্লাসের রেকর্ডেড ভিডিও দেখে এবং ক্লাস নোট পড়ে জোরালো প্রস্তুতি নাও"
+    }
+]
