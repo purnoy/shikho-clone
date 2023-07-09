@@ -2,7 +2,11 @@ import React from 'react'
 
 const HomePageMobileUpdate = () => {
   return (
-    <div>HomePageMobileUpdate</div>
+    <section className="bg-white">
+        <div className="section-intro container mx-auto">
+            hi
+        </div>
+    </section>
   )
 }
 

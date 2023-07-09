@@ -42,8 +42,8 @@ const {newCatNavObj, selectedCat, carouselData} = useContext(HomePageLessonCarou
   return (
     
     <section className="bg-gray-100">
-        <div className="section-intro container mx-auto">
-            <div className="w-[80%] mx-auto mt-12 mb-6">
+        <div className="section-intro md:container mx-auto">
+            <div className="w-[80%]  mx-auto mt-12 mb-6">
                 <h1 className='text-center text-[#354895] text-[27px] font-semibold mb-2'>দারুণ সব অ্যানিমেটেড উদাহরণের ভিডিও লেসনে শেখা হবে আরও সহজ</h1>
                 <h3 className='text-center text-[#293563] text-[16px] '>সেরা মেন্টরদের তৈরি চমৎকার সব অ্যানিমেটেড উদাহরণ দিয়ে সাজানো ভিডিও লেসন দেখে সহজেই শিখে ক্লাসে-পরীক্ষায় এগিয়ে যাও</h3>
             </div>
@@ -60,10 +60,8 @@ const {newCatNavObj, selectedCat, carouselData} = useContext(HomePageLessonCarou
                   } 
               </div>
             </div>
-            <div className="bg-lesson_carousel py-6 px-2 md:px-6 rounded-2xl border-white border-2 relative">
-          
-
-              <div className="max-w-[95%] md:max-w-[85%] mx-auto">
+            <div className="bg-lesson_carousel py-6  md:px-6 rounded-2xl border-white border-2 relative">
+              <div className="max-w-[100%] md:max-w-[85%] mx-auto">
                   
               <Slider {...settings} className={`  `}>
              
