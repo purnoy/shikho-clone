@@ -32,7 +32,7 @@ const HomePageMobileUpdate = () => {
                     {
                         mobile_updates_text.map(item=>{
                             return(
-                                <div className="flex space-x-2 mb-4">
+                                <div className="flex space-x-2 mb-4" key={item.name}>
                                     <AiFillStar className="text-[#999] text-[30px]"/>
                                     <h1 className="text-[#293563] font-semibold text-[18px]">{item.text}</h1>
                                 </div>

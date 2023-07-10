@@ -1,6 +1,6 @@
 import Image from "next/image";
 import video from '@/asset/video.webp';
-import {BsFillPlayCircleFill} from 'react-icons/bs'
+
 
 const HomePagePromotion = () => {
   return (
