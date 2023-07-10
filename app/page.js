@@ -7,6 +7,7 @@ import HomePageAcamedicOverview from '@/components/HomePageAcamedicOverview ';
 import HomePageLessonCarousel from '@/components/HomePageLessonCarousel';
 import VideoModal from '@/components/VideoModal';
 import HomePageMobileUpdate from '@/components/HomePageMobileUpdate';
+import HomePagePromotion from '@/components/HomePagePromotion';
 
 
 
@@ -21,6 +22,7 @@ const HomePage = () => {
       <HomePageLessonCarousel/>
       <VideoModal/>
       <HomePageMobileUpdate/>
+      <HomePagePromotion/>
       
       
     </div>
