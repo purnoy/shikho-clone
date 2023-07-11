@@ -225,3 +225,68 @@ export const mobile_updates_text = [
         text:"ক্লাসের রেকর্ডেড ভিডিও দেখে এবং ক্লাস নোট পড়ে জোরালো প্রস্তুতি নাও"
     }
 ]
+
+import diamond from "@/asset/testimonials/diamond.svg"
+import camera from "@/asset/testimonials/camera.svg"
+import apple from "@/asset/testimonials/apple.svg"
+import wallet from "@/asset/testimonials/wallet.svg"
+
+export const testimonial_intro = [
+    {
+        id:1,
+        image: diamond,
+        copy: "সেরা কন্টেন্ট"
+    },
+    {
+        id:2,
+        image: camera,
+        copy: "সহজ স্টাডি ম্যাটেরিয়াল"
+    },
+    {
+        id:3,
+        image: wallet,
+        copy: "স্বল্প খরচে অনেক কিছু"
+    },
+    {
+        id:4,
+        image: apple,
+        copy: "সাবলীল উপস্থাপনা"
+    }
+]
+
+
+import carousel_safwat from "../asset/testimonials/carousel_safwat.jpg";
+import carousel_oishimoni from "../asset/testimonials/carousel_oishimoni.jpg";
+import carousel_turj from "../asset/testimonials/carousel_turj.jpg";
+import carousel_mehjabin from "../asset/testimonials/carousel_mehjabin.jpg";
+
+export const carousel_testimonials = [
+    {
+        id:1,
+        image: carousel_safwat,
+        name: "সাফওয়াত নাওয়ার",
+        grade: "১০ম শ্রেণি,হলি ক্রস উচ্চ বালিকা বিদ্যালয়",
+        comment: "লাইভ ক্লাসে চ্যাটের মাধ্যমে প্রশ্ন করলে টিচাররা তার উত্তর দেয়, এজন্য আমার অনেক সুবিধা হয়েছে",
+    },
+    {
+        id:2,
+        image: carousel_oishimoni,
+        name: "সাফওয়াত নাওয়ার",
+        grade: "১০ম শ্রেণি,হলি ক্রস উচ্চ বালিকা বিদ্যালয়",
+        comment: "লাইভ ক্লাসে চ্যাটের মাধ্যমে প্রশ্ন করলে টিচাররা তার উত্তর দেয়, এজন্য আমার অনেক সুবিধা হয়েছে",
+    },
+    {
+        id:3,
+        image: carousel_turj,
+        name: "সাফওয়াত নাওয়ার",
+        grade: "১০ম শ্রেণি,হলি ক্রস উচ্চ বালিকা বিদ্যালয়",
+        comment: "লাইভ ক্লাসে চ্যাটের মাধ্যমে প্রশ্ন করলে টিচাররা তার উত্তর দেয়, এজন্য আমার অনেক সুবিধা হয়েছে",
+    },
+    {
+        id:4,
+        image: carousel_mehjabin,
+        name: "সাফওয়াত নাওয়ার",
+        grade: "১০ম শ্রেণি,হলি ক্রস উচ্চ বালিকা বিদ্যালয়",
+        comment: "\"লাইভ ক্লাসে চ্যাটের মাধ্যমে প্রশ্ন করলে টিচাররা তার উত্তর দেয়, এজন্য আমার অনেক সুবিধা হয়েছে\"",
+    }
+]
