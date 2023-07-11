@@ -1,5 +1,6 @@
 import Image from "next/image";
 import video from '@/asset/video.webp';
+import {BsFillPlayCircleFill} from 'react-icons/bs';
 
 
 const HomePagePromotion = () => {
@@ -7,8 +8,11 @@ const HomePagePromotion = () => {
     <section className="bg-[#f3f3f3]">
         <div className="section-intro container mx-auto flex-between flex-col-reverse md:flex-row">
             <div className="w-[100%] md:w-[50%] flex-center flex-col py-12 ">
-                <div className="w-[90%] bg-[red] flex-center rounded-xl overflow-hidden cursor-pointer hover:scale-110 transition duration-300 mb-6">
+                <div className="w-[90%] bg-[red] flex-center rounded-xl overflow-hidden cursor-pointer hover:scale-110 transition duration-300 mb-6 relative">
                     <Image src={video} width={600} height={550} className="object-cover w-[100%]" alt="Video"/>
+                    <div className="absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2 z-10">
+                    <BsFillPlayCircleFill className="text-[80px] text-white opacity-80"/>
+                    </div>
                 </div>
                 <button type='button' className='md:hidden mt-8 text-[16px] flex items-center  justify-center py-4 shadow-lg hover:shadow-sm transition duration-200 w-[300px]  rounded-2xl b  mb-4 md:mb-0  hover: bg-[#475dff] text-white hover:bg-[#d63384]'>
                         

@@ -18,7 +18,7 @@
     @apply flex justify-between items-center;
   }
   .section-intro{
-    @apply py-8 px-4
+    @apply py-16 px-4;
   }
  
   

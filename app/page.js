@@ -8,6 +8,7 @@ import HomePageLessonCarousel from '@/components/HomePageLessonCarousel';
 import VideoModal from '@/components/VideoModal';
 import HomePageMobileUpdate from '@/components/HomePageMobileUpdate';
 import HomePagePromotion from '@/components/HomePagePromotion';
+import HomePagePromises from '@/components/HomePagePromises';
 
 
 
@@ -23,6 +24,7 @@ const HomePage = () => {
       <VideoModal/>
       <HomePageMobileUpdate/>
       <HomePagePromotion/>
+      <HomePagePromises/>
       
       
     </div>
