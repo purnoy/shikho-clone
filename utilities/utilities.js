@@ -192,16 +192,19 @@ import solid_preparation from '@/asset/mobile_updates/solid_preparation.webp';
 import report_card_1 from '@/asset/mobile_updates/report_card.webp';
 export const mobile_updates = [
     {
+        id:1,
         title: "প্র্যাকটিস",
         image: practice,
 
     },
     {
+        id:2,
         title: "সলিড প্রিপারেশন",
         image: solid_preparation,
         
     },
     {
+        id:3,
         title: "সলিড প্রিপারেশন",
         image: report_card_1,
 
@@ -210,12 +213,15 @@ export const mobile_updates = [
 
 export const mobile_updates_text = [
     {   
+        id: 1,
         text:"প্রতিটি বিষয়ের সেরা মেন্টরের সাথে ৩ ধরনের লাইভ ক্লাসে প্রতিটি টপিক শিখো"
     },
     {   
+        id: 2,
         text: "হোমওয়ার্ক হিসেবে বাস্তব উদাহরণের অ্যানিমেটেড ভিডিও দেখো, স্মার্ট নোট পড়ো এবং প্র্যাকটিস টেস্ট দাও"
     },
     {   
+        id: 3,
         text:"ক্লাসের রেকর্ডেড ভিডিও দেখে এবং ক্লাস নোট পড়ে জোরালো প্রস্তুতি নাও"
     }
 ]
