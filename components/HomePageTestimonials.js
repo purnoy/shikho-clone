@@ -32,11 +32,11 @@ const HomePageTestimonials = () => {
                             {
                                 testimonial_intro.map(item=>{
                                     return(
-                                        <div className=" flex p-4 rounded-3xl w-[180px] md:w-[200px] cursor-pointer hover:-translate-y-2 transition duration-300 bg-white" key={item.id} p-8>
+                                        <div className=" flex p-4 rounded-3xl xsm:w-[150px] sm:w-[180px] md:w-[200px] cursor-pointer hover:-translate-y-2 transition duration-300 bg-white" key={item.id} p-8>
                                             <div className="mr-4 flex-center">
-                                                <Image src={item.image} height={40} width={40}/>
+                                                <Image src={item.image} height={40} width={40} alt="promise image"/>
                                             </div>
-                                            <div className="text-[18px] flex-center">{item.copy}</div>
+                                            <div className="xsm:text-[16px] sm:text-[18px]  flex-center">{item.copy}</div>
                                         </div>
                                     )
                                 })
@@ -50,14 +50,16 @@ const HomePageTestimonials = () => {
                 </div>
             </div>
         </div>
-        <div className="container mx-auto relative py-8 p6-4">
-            <div className="absolute left-0 bg-red-500 md:rounded-2xl p-4 container  mx-auto">
+        <div className="container mx-auto relative py-8 p-4">
+            <h1 className="md:hidden text-[30px] text-center font-semibold text-[#354895] mb-6 ">টেস্টিমোনিয়াল</h1>
+            <div className="border-2 border-[#ededed] rounded-2xl md:-mt-[300px] bg-white md:rounded-2xl p-4  md:shadow-2xl  ">
 
             <Slider {...settings}>
                 {
                     carousel_testimonials.map(item=>{
                         return(
                             <HomePageTestimonialsReview key={item.id} item={item} />
+                            // <div className="" key={item.id}>{item.id}</div>
                         )
                     })
                 }
