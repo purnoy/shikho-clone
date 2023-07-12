@@ -3,18 +3,43 @@ import { testimonial_intro, carousel_testimonials } from "@/utilities/utilities"
 import Image from "next/image";
 import Slider from "react-slick";
 import HomePageTestimonialsReview from "./HomePageTestimonialsReview";
+import { SampleNextArrow, SamplePrevArrow } from "./CarouselArrows";
 
 const HomePageTestimonials = () => {
 
-    const settings = {
+    var settings = {
         dots: true,
         infinite: true,
         speed: 500,
+        autoplay: true,
+        autoplaySpeed: 2500,
         slidesToShow: 1,
         slidesToScroll: 1,
- 
-      autoplay: true,
-      autoplaySpeed: 2500,
+        initialSlide: 1,
+        nextArrow: <SampleNextArrow/>,
+        prevArrow: <SamplePrevArrow />,
+        
+        responsive: [
+
+          {
+            breakpoint: 1000,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+              infinite: true,
+              dots: true,
+              nextArrow: false,
+              prevArrow:false
+            }
+          },
+          {
+            breakpoint: 750,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
       };
 
   return (
@@ -50,9 +75,9 @@ const HomePageTestimonials = () => {
                 </div>
             </div>
         </div>
-        <div className="container mx-auto relative py-8 p-4">
+        <div className="md:-my-[300px] container mx-auto relative py-8 p-4">
             <h1 className="md:hidden text-[30px] text-center font-semibold text-[#354895] mb-6 ">টেস্টিমোনিয়াল</h1>
-            <div className="border-2 border-[#ededed] rounded-2xl md:-mt-[300px] bg-white md:rounded-2xl p-4  md:shadow-2xl  ">
+            <div className=" bg-white md:rounded-2xl p-4  md:shadow-2xl md:w-[85%] md:mx-auto ">
 
             <Slider {...settings}>
                 {

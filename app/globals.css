@@ -24,11 +24,9 @@
   
  .slick-slider{
   position: static!important;
+  
  }
- .slick-slider .slick-list{
 
-  margin-bottom: 30px!important;
-}
  .slick-dots{
   position: static!important;
   
@@ -68,4 +66,11 @@
   width:30px!important;
   border-radius: 30px;
   background-color: #cf278d;
+}
+
+@media only screen and (max-width: 1000px){
+  .slick-slider .slick-list{
+
+    margin-bottom: 30px!important;
+  }
 }
