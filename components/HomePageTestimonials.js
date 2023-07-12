@@ -75,7 +75,7 @@ const HomePageTestimonials = () => {
                 </div>
             </div>
         </div>
-        <div className="md:-my-[300px] container mx-auto relative py-8 p-4">
+        <div className="md:-mt-[320px] container mx-auto relative py-8 p-4">
             <h1 className="md:hidden text-[30px] text-center font-semibold text-[#354895] mb-6 ">টেস্টিমোনিয়াল</h1>
             <div className=" bg-white md:rounded-2xl p-4  md:shadow-2xl md:w-[85%] md:mx-auto ">
 

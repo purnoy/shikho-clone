@@ -267,6 +267,8 @@ export const carousel_testimonials = [
         name: "সাফওয়াত নাওয়ার",
         grade: "১০ম শ্রেণি,হলি ক্রস উচ্চ বালিকা বিদ্যালয়",
         comment: "লাইভ ক্লাসে চ্যাটের মাধ্যমে প্রশ্ন করলে টিচাররা তার উত্তর দেয়, এজন্য আমার অনেক সুবিধা হয়েছে",
+        link: 'https://www.youtube.com/watch?v=DsS6i9bgZp0',
+        topic: '2.8 - ঘাস ফড়িংয়ের মুখোপাঙ্গ, বক্ষ, উদর'
     },
     {
         id:2,
@@ -274,6 +276,9 @@ export const carousel_testimonials = [
         name: "সাফওয়াত নাওয়ার",
         grade: "১২শ শ্রেণি, হলি ক্রস উচ্চ বালিকা বিদ্যালয় ",
         comment: "অ্যানিমেটেড ভিডিওতে পড়া ভিজ্যুয়ালাইজ করা সহজ",
+        link: 'https://www.youtube.com/watch?v=DsS6i9bgZp0',
+        topic: '2.8 - ঘাস ফড়িংয়ের মুখোপাঙ্গ, বক্ষ, উদর'
+
     },
     {
         id:3,
@@ -281,6 +286,8 @@ export const carousel_testimonials = [
         name: "সাফওয়াত নাওয়ার",
         grade: "১১শ শ্রেনি, শহীদ রমিজ উদ্দিন ক্যান্টনমেন্ট কলেজ",
         comment: "\"প্রতিটি টার্ম অ্যানিমেটেড ভিডিও আকারে হওয়ায় বুঝতে সহজ হয়েছে\”",
+        link: 'https://www.youtube.com/watch?v=DsS6i9bgZp0',
+        topic: '2.8 - ঘাস ফড়িংয়ের মুখোপাঙ্গ, বক্ষ, উদর'
     },
     {
         id:4,
@@ -288,5 +295,7 @@ export const carousel_testimonials = [
         name: "সাফওয়াত নাওয়ার",
         grade: "বি.এ.এফ. শাহীন কলেজ",
         comment: "\"অনলাইনে Shikho\'র লেসনগুলো পড়েই আমি গোল্ডেন A+ আর স্কলারশিপ পেয়েছি\"",
+        link: 'https://www.youtube.com/watch?v=DsS6i9bgZp0',
+        topic: '2.8 - ঘাস ফড়িংয়ের মুখোপাঙ্গ, বক্ষ, উদর'
     }
 ]
