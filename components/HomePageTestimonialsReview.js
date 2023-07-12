@@ -43,8 +43,8 @@ const HomePageTestimonialsReview = ({item}) => {
               <Image src={item.image} height={500} width={500} alt="Image" className='h-[90%] w-[100%] hover:scale-110   duration-300 object-cover  '></Image>
               <div className="absolute top-0 left-0 w-[100%] h-[100%] z-20 bg-slate-50 opacity-30"></div>
             </div>
-           <div className="absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2 z-30 text-[40px] text-[#5468ff]">
-            <BsPlayCircleFill/>
+           <div className=" absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2 z-30 text-[40px] text-[#5468ff]">
+            <BsPlayCircleFill className='wave'/>
            </div>
           </div>
         </div>

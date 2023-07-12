@@ -68,9 +68,30 @@
   background-color: #cf278d;
 }
 
+.wave{
+  border-radius: 100%;
+  animation-name: btnWave;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+@keyframes btnWave {
+  0% {
+      box-shadow: 0 0 0 0 #5468ffae, 0 0 0 0 #5468ffae;
+  }
+
+  80% {
+      box-shadow: 0 0 0 20px #fff0, 0 0 0 40px #fff0;
+  }
+
+  100% {
+      box-shadow: 0 0 0 0 #fff0, 0 0 0 0 #fff0;
+  }
+}
+
 @media only screen and (max-width: 900px){
   .slick-slider .slick-list{
 
     margin-bottom: 30px!important;
   }
 }
+

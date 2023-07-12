@@ -13,8 +13,13 @@ module.exports = {
         academicOverview: 'url("https://shikho.com/images/shikho-program/academic_program_bg.png")',
         lesson_carousel: 'url("https://res.cloudinary.com/cross-border-education-technologies-pte-ltd/image/upload/v1670309928/mh6hpcqrlb4ts68ia1gg.jpg")'
       },
-      
-      
+      keyframes: {
+        wave: {
+          '0%': { boxShadow: '0 0 0 0 #fff4, 0 0 0 0 #fff4;' },
+          '50%': {boxSshadow: '0 0 0 20px #fff0, 0 0 0 40px #fff0' },
+          '50%': {boxSshadow: '0 0 0 0 #fff0, 0 0 0 0 #fff0' },
+        }
+      },
     },
     screens: {
       xsm:'540',
