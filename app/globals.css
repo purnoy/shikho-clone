@@ -68,7 +68,7 @@
   background-color: #cf278d;
 }
 
-@media only screen and (max-width: 1000px){
+@media only screen and (max-width: 900px){
   .slick-slider .slick-list{
 
     margin-bottom: 30px!important;

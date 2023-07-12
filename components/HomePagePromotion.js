@@ -6,10 +6,10 @@ import {BsFillPlayCircleFill} from 'react-icons/bs';
 const HomePagePromotion = () => {
   return (
     <section className="bg-[#f3f3f3]">
-        <div className="section-intro container mx-auto flex-between flex-col-reverse md:flex-row">
+        <div className="py-16 px-8 container mx-auto flex items-center justify-between flex-col-reverse md:flex-row">
             <div className="w-[100%] md:w-[50%] flex-center flex-col py-12 ">
                 <div className="w-[90%] bg-[red] flex-center rounded-xl overflow-hidden cursor-pointer hover:scale-110 transition duration-300 mb-6 relative">
-                    <Image src={video} width={600} height={550} className="object-cover w-[100%]" alt="Video"/>
+                    <Image src={video} width={400} height={350} className="object-cover w-[100%]" alt="Video"/>
                     <div className="absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2 z-10">
                     <BsFillPlayCircleFill className="text-[80px] text-white opacity-80"/>
                     </div>

@@ -14,6 +14,7 @@ module.exports = {
         lesson_carousel: 'url("https://res.cloudinary.com/cross-border-education-technologies-pte-ltd/image/upload/v1670309928/mh6hpcqrlb4ts68ia1gg.jpg")'
       },
       
+      
     },
     screens: {
       xsm:'540',
