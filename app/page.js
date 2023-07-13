@@ -9,6 +9,7 @@ import VideoModal from '@/components/VideoModal';
 import HomePageMobileUpdate from '@/components/HomePageMobileUpdate';
 import HomePagePromotion from '@/components/HomePagePromotion';
 import HomePageTestimonials from '@/components/HomePageTestimonials';
+import HomePageAppointment from '@/components/HomePageAppointment';
 
 
 
@@ -26,6 +27,7 @@ const HomePage = () => {
       <HomePageMobileUpdate/>
       <HomePagePromotion/>
       <HomePageTestimonials/>
+      <HomePageAppointment/>
     </div>
   
   )
