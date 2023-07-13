@@ -20,7 +20,7 @@ const HomePagePromotion = () => {
                     </button>
             </div>
 
-            <div className="w-[100%] md:w-[50%] p-6 ms-12 flex items-center  md:items-start justify-between flex-col">
+            <div className="w-[100%] md:w-[50%] p-6 md:ms-12 flex items-center  md:items-start justify-between flex-col">
                 <h1 className="  text-[#354895] font-bold text-center md:text-left text-[35px] mb-4">
                     Shikhoর সাথেই শিখছে <br/>সবাই, জিতছে সবাই
                 </h1>
