@@ -356,3 +356,165 @@ export const media_coverage =[
 
 
 ]
+
+
+
+import investor_1 from "@/asset/investors/1.png";
+import investor_2 from "@/asset/investors/2.png";
+import investor_3 from "@/asset/investors/3.png";
+import investor_4 from "@/asset/investors/4.png";
+import investor_5 from "@/asset/investors/5.png";
+import investor_6 from "@/asset/investors/6.png";
+import investor_7 from "@/asset/investors/7.png";
+import investor_8 from "@/asset/investors/8.png";
+import investor_9 from "@/asset/investors/9.png";
+import investor_10 from "@/asset/investors/10.png";
+
+
+export const investors = [
+    {
+        id: 1,
+        image:investor_1
+    },
+    {
+        id: 2,
+        image:investor_2
+    },
+    {
+        id: 3,
+        image:investor_3
+    },
+    {
+        id: 4,
+        image:investor_4
+    },
+    {
+        id: 5,
+        image:investor_5
+    },
+    {
+        id: 6,
+        image:investor_6
+    },
+    {
+        id: 7,
+        image:investor_7
+    },
+    {
+        id: 8,
+        image:investor_8
+    },
+    {
+        id: 9,
+        image:investor_9 
+    },
+    {
+        id: 10,
+        image:investor_10
+    },
+]
+
+
+import partner_1 from "@/asset/partners/1.png";
+import partner_2 from "@/asset/partners/2.png";
+import partner_3 from "@/asset/partners/3.png";
+import partner_4 from "@/asset/partners/4.png";
+import partner_5 from "@/asset/partners/5.png";
+import partner_6 from "@/asset/partners/6.png";
+import partner_7 from "@/asset/partners/7.png";
+import partner_8 from "@/asset/partners/8.png";
+import partner_9 from "@/asset/partners/9.png";
+import partner_10 from "@/asset/partners/10.png";
+
+
+export const partners = [
+    {
+        id: 1,
+        image:partner_1
+    },
+    {
+        id: 2,
+        image:partner_2
+    },
+    {
+        id: 3,
+        image:partner_3
+    },
+    {
+        id: 4,
+        image:partner_4
+    },
+    {
+        id: 5,
+        image:partner_5
+    },
+    {
+        id: 6,
+        image:partner_6
+    },
+    {
+        id: 7,
+        image:partner_7
+    },
+    {
+        id: 8,
+        image:partner_8
+    },
+    {
+        id: 9,
+        image:partner_9 
+    },
+    {
+        id: 10,
+        image:partner_10
+    },
+]
+
+import {FaFacebookF, FaYoutube, FaInstagram, FaTwitter} from 'react-icons/fa';
+
+export const social = [
+    {
+        id: 1,
+        media: <FaFacebookF/>
+    },
+    {
+        id: 2,
+        media: <FaYoutube/>
+    },
+    {
+        id: 3,
+        media: <FaInstagram/>
+    },
+    {
+        id: 4,
+        media: <FaTwitter/>
+    },
+]
+
+export const important_links = [
+    {
+        id: 1,
+        link:"",
+        text:"উদ্যোক্তা"
+    },
+    {
+        id: 1,
+        link:"",
+        text:"আমাদের সম্পর্কে"
+    },
+    {
+        id: 1,
+        link:"",
+        text:"ক্যারিয়ার"
+    },
+    {
+        id: 1,
+        link:"",
+        text:"অ্যাকাডেমিক প্রোগ্রাম"
+    },
+    {
+        id: 1,
+        link:"",
+        text:"বহুব্রীহি"
+    },
+]

@@ -11,6 +11,7 @@ import HomePagePromotion from '@/components/HomePagePromotion';
 import HomePageTestimonials from '@/components/HomePageTestimonials';
 import HomePageAppointment from '@/components/HomePageAppointment';
 import HomePageMediaCoverage from '@/components/HomePageMediaCoverage';
+import HomePageInvestrosnPartners from './../components/HomePageInvestrosnPartners';
 
 
 const HomePage = () => {
@@ -28,6 +29,7 @@ const HomePage = () => {
       <HomePageTestimonials/>
       <HomePageAppointment/>
       <HomePageMediaCoverage/>
+      <HomePageInvestrosnPartners/>
     </div>
   
   )

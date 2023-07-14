@@ -34,7 +34,7 @@ const HomePageMediaCoverage = () => {
            ]
       };
   return (
-    <div className="bg-[#dde4ff] section-intro">
+    <div className="bg-[#eef1ff] section-intro">
       <div className="container mb-8 mx-auto">
         <h1 className="text-[#354895] text-center font-semibold mb-4 text-[22px]">গণমাধ্যমে Shikho</h1>
         <p className="text-[#354895] text-center text-[14px]">দৈনিক সংবাদপত্র, টেলিভিশন চ্যানেলসহ বিভিন্ন গণমাধ্যমে Shikho<br/> সম্পর্কে প্রকাশিত বিভিন্ন সংবাদ ও প্রতিবেদনসমূহ</p>
