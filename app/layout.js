@@ -37,7 +37,7 @@ export default function RootLayout({ children }) {
             <MobileNavigation/>
               <Header/>
                 {children}
-              {/* <Footer/>   */}
+              <Footer/>  
               </VideoModalProvider>
           </HomePageLessonCarouselProvider>
         </HomePageAcamedicOverviewProvider>        
