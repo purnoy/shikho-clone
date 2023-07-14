@@ -299,3 +299,60 @@ export const carousel_testimonials = [
         topic: '2.8 - ঘাস ফড়িংয়ের মুখোপাঙ্গ, বক্ষ, উদর'
     }
 ]
+
+import prothomalo_image from '@/asset/media_coverage/prothom_alo_image.png';
+import prothomalo_logo from '@/asset/media_coverage/prothom_alo_logo.png';
+import dhakatribune_image from '@/asset/media_coverage/dhaka_tribune_image.png';
+import dhakatribune_logo from '@/asset/media_coverage/dhaka_tribune_logo.svg';
+import dailystar_image_n_logo from '@/asset/media_coverage/dailystar_image_n_logo.jpeg';
+import techasia_image from '@/asset/media_coverage/techinasia_image.png';
+import techasia_logo from '@/asset/media_coverage/techasia_logo.png';
+import trtworld_image from '@/asset/media_coverage/trt_world_image.png';
+import trtworld_logo from '@/asset/media_coverage/trt_world_logo.png';
+
+export const media_coverage =[
+    {
+        id: 1,
+        image: prothomalo_image,
+        logo: prothomalo_logo,
+        link: 'https://www.prothomalo.com/education/1l07gnc6rm',
+        date: "Aug 24, 2022",
+        title: 'শিখোতে যুক্ত হলেন চঞ্চল চৌধুরী'
+    },
+    {
+        id: 2,
+        image: dhakatribune_image,
+        logo: dhakatribune_logo,
+        link: 'https://www.dhakatribune.com/business/2022/03/29/shikho-becomes-the-first-startup-with-53m-funding-in-bangladesh',
+        date: 'March 29, 2022',
+        title: 'Shikho becomes the first startup with $5.3M funding in Bangladesh'
+    },
+
+    {
+        id: 3,
+        image: dailystar_image_n_logo,
+        logo: dailystar_image_n_logo,
+        link: 'https://www.thedailystar.net/shout/news/bangladeshi-edtech-shikho-closes-seed-investment-usd-53-million-2993191',
+        date:'Dec 4, 2022',
+        title: 'Bangladeshi edtech Shikho closes seed investment of USD 5.3 million'
+    },
+
+    {
+        id: 4,
+        image: techasia_image ,
+        logo: techasia_logo,
+        link: 'https://www.techinasia.com/wavemaker-leads-4m-seed-bangladeshi-edtech-startup-shikho',
+        date: 'March 29, 2022',
+        title: 'Wavemaker leads $4m round of Bangladeshi edtech startup'
+    },
+    {
+        id: 5,
+        image: trtworld_image,
+        logo: trtworld_logo,
+        link: 'https://www.trtworld.com/magazine/shikho-a-startup-revolutionising-digital-education-in-bangladesh-49165',
+        date: 'Aug 12, 2021',
+        title: 'Shikho: A startup revolutionising digital education in Bangladesh'
+    }
+
+
+]

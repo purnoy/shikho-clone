@@ -10,8 +10,7 @@ import HomePageMobileUpdate from '@/components/HomePageMobileUpdate';
 import HomePagePromotion from '@/components/HomePagePromotion';
 import HomePageTestimonials from '@/components/HomePageTestimonials';
 import HomePageAppointment from '@/components/HomePageAppointment';
-
-
+import HomePageMediaCoverage from '@/components/HomePageMediaCoverage';
 
 
 const HomePage = () => {
@@ -28,6 +27,7 @@ const HomePage = () => {
       <HomePagePromotion/>
       <HomePageTestimonials/>
       <HomePageAppointment/>
+      <HomePageMediaCoverage/>
     </div>
   
   )

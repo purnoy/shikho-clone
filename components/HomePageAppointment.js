@@ -7,7 +7,7 @@ const HomePageAppointment = () => {
     <section className="bg-[#354895]  flex md:justify-between justify-center items-center ">
        <div className='container mx-auto'>
             <div className=" flex items-end justify-around w-[100%]">
-                <div className="flex items-center  w-[100%] md:w-[70%]  p-16">
+                <div className="flex items-center  w-[100%] md:w-[50%]  px-8 p-8 md:py-16">
                     <div className="bg-gray-200 flex items-center justify-center  w-[100%] md:w-[90%] lg:w-[70%] rounded-2xl shadow-lg">
                         <form action="" className='p-6'>
                             <h1 className='text-[22px] text-[#354895] font-semibold mb-10'>ফ্রি পরামর্শ পেতে অ্যাপয়েন্টমেন্ট বুক করো</h1>
@@ -19,9 +19,9 @@ const HomePageAppointment = () => {
                         </form>
                     </div>
                 </div>
-                <div className=" w-[40%] hidden md:flex md:items-end md:justify-end">
-                    <div className="">
-                        <Image src={appointmentImage} width={700} height= {700} alt="Image" className=""></Image>
+                <div className=" w-[50%] hidden md:flex md:items-end md:justify-end">
+                    <div className="w-[100%] h-[100%]">
+                        <Image src={appointmentImage} width={800} height= {800} alt="Image" className=""></Image>
                     </div>
                 </div>
             </div>
