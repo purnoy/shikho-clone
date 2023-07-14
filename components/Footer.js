@@ -10,7 +10,7 @@ import {BsFillEnvelopeFill} from "react-icons/bs";
 
 const Footer = () => {
   return (
-    <div className="bg-[#d0d8ff]">
+    <div className="bg-[#d0d8ff] overflow-hidden">
       <div className="py-8 px-4 container border-b-2 mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 ">
             <div className="mb-2 flex flex-col justify-around items-start">
