@@ -6,7 +6,7 @@ import {BsFillChatRightDotsFill} from "react-icons/bs";
 
 const CommonMessaging = () => {
     const [textPopUp, setTextPopUp] = useState(false);
-    cnst [chatForm, setChatForm] = useState(false);
+    const [chatForm, setChatForm] = useState(false);
   return (
     <div  className='fixed bottom-6 right-8 sm:bottom-12  z-40 '>
         <div className="">
