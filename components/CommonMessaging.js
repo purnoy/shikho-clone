@@ -1,6 +1,6 @@
 'use client';
 import React, { useState } from 'react';
-import {FaFacebookMessenger, FaChevronDown} from 'react-icons/fa';
+import {FaFacebookMessenger, FaChevronDown, FaArrowLeft} from 'react-icons/fa';
 import {BsFillChatRightDotsFill} from "react-icons/bs";
 
 
@@ -10,7 +10,6 @@ const CommonMessaging = () => {
 
     const chatboxOpener = ()=>{
         setTextPopUp(true);
-        // setChatForm(a=>!a);
     }
     const chatbox = () =>{
         setChatForm(a=>!a);
@@ -24,12 +23,8 @@ const CommonMessaging = () => {
   return (
     <div  className='fixed bottom-6 right-8 sm:bottom-12  z-40 '>
         <div className="">
-            {/* <div  className={`${textPopUp? 'hidden sm:block' : 'block'} absolute bottom-0 right-0 z-30 bg-[#354895] p-4 rounded-2xl cursor-pointer shadow-xl`}>
-                {(chatForm)?(<p onClick={chatBoxCloser}  >X</p>) : (<FaFacebookMessenger onClick={chatboxOpener}  className=" text-[25px] sm:text-[30px] text-white"/>)}
-            </div> */}
-
             {
-                (chatForm)?(<div onClick={chatBoxCloser} className={`${!textPopUp && chatForm? 'hidden sm:block' : 'block'} absolute bottom-0 right-0 z-30 bg-[#354895] p-4 rounded-2xl cursor-pointer shadow-xl`}>X</div>):(<div onClick={chatboxOpener}  className={`${textPopUp && !chatForm? 'hidden sm:block' : 'block'} absolute bottom-0 right-0 z-30 bg-[#354895] p-4 rounded-2xl cursor-pointer shadow-xl`}><FaFacebookMessenger  className=" text-[25px] sm:text-[30px] text-white"/></div>)
+                (chatForm)?(<div onClick={chatBoxCloser} className={`${!textPopUp && chatForm? 'hidden sm:block' : 'block'} absolute bottom-0 right-0 z-50 bg-[#354895] py-2 px-6 rounded-2xl cursor-pointer shadow-xl text-white font-bold text-[32px]`}>x</div>):(<div onClick={chatboxOpener}  className={`${textPopUp && !chatForm? 'hidden sm:block' : 'block'} absolute bottom-0 right-0 z-50 bg-[#354895] p-4 rounded-2xl cursor-pointer shadow-xl`}><FaFacebookMessenger  className=" text-[25px] sm:text-[30px] text-white"/></div>)
             }
             <div className={`${textPopUp? 'block' : 'hidden'} duration-300 `}>
                 <div className={` w-screen bg-yellow-50 sm:w-[380px] absolute -bottom-6 -right-8 sm:bottom-8 sm:right-8 z-20 shadow-2xl sm:rounded-xl p-4`}>
@@ -46,8 +41,13 @@ const CommonMessaging = () => {
                     </div>
                 </div>
             </div>
-            <div className={`${chatForm? 'block': 'hidden'} `}>
-                heeeloshfoshdofssssssskkkkklddddsjjjjjjdjjjjjjjjjjjjjjjj
+            <div  className={`${chatForm? 'block h-screen  w-screen bg-yellow-50 sm:h-[450px] sm:w-[380px] absolute -bottom-6 -right-8 sm:bottom-10 sm:right-10 z-40 shadow-2xl sm:rounded-xl ': 'hidden'} `}>
+                <div  className=" ">
+                    <div className="bg-[#354895] w-[100%] rounded-ss-xl rounded-se-xl flex items-center  p-4 text-[14px] text-white">
+                        <FaArrowLeft onClick={()=>setChatForm(false)} className='cursor-pointer text-[22px] me-4' />
+                        <h2 className=' text-white font-bold text-[18px]'>শিখো ডিজিটাল লার্নিং</h2>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
