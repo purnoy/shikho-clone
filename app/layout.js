@@ -9,6 +9,7 @@ import HomePageLessonCarouselProvider from '@/context/HomePageLessonCarouselCont
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import VideoModalProvider from '@/context/VideoModalContext';
+import CommonMessaging from '@/components/CommonMessaging';
 
 
 
@@ -37,6 +38,7 @@ export default function RootLayout({ children }) {
             <MobileNavigation/>
               <Header/>
                 {children}
+                <CommonMessaging/>
               <Footer/>  
               </VideoModalProvider>
           </HomePageLessonCarouselProvider>
