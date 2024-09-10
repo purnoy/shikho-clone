@@ -15,7 +15,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 ">
             <div className="mb-2 flex flex-col justify-around items-start">
               <Image src={shikho_logo} alt="Shikho Logo" width={100} height={100}></Image>
-              <p className="text-[#354895] font-semibold text-[14px] ps-2 my-4">শিখো অ্যাপ ডাউনলোড করো!</p>
+              <p className="text-[#354895] font-semibold text-[14px] ps-2 my-4">শিখো অ্যাপ ডাউনলোড করো! BDBDBD</p>
               <div className ="ms-2 mb-4 p-4 bg-white rounded-lg w-[50%] ">
                 <Image src={g_play} alt="Shikho Logo" className="max-auto " width={100} height={100}></Image>
               </div>
